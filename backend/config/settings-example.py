@@ -21,7 +21,9 @@ INSTALLED_APPS = [
 
     'rest_framework.authtoken',
     'rest_framework',
-    'djoser'
+    'djoser',
+
+    'log_in'
 ]
 
 REST_FRAMEWORK = {
@@ -49,7 +51,7 @@ SIMPLE_JWT = {
     'AUDIENCE': None,
     'ISSUER': None,
 
-    'AUTH_HEADER_TYPES': ('JWT',),
+    'AUTH_HEADER_TYPES': ('JWT'),
     'USER_ID_FIELD': 'id',
     'USER_ID_CLAIM': 'user_id',
 
@@ -79,6 +81,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
+    'config.middleware.Loguru',
 ]
 
 ROOT_URLCONF = 'config.urls'
