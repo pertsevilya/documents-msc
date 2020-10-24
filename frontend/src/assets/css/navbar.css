@@ -1,0 +1,25 @@
+.main-nav {
+	background-color: #3E3F3A !important;
+    line-height: 1.4285em;
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+}
+
+.logo {
+	font-size: 40px;
+}
+
+.links {
+	filter: hue-rotate(0deg) sepia(0%);margin: 100;
+}
+
+.nav-text {
+	font-size: 20px;
+}
+
+.container-fluid {
+	width: 1500px;
+}
+
+.main-nav {
+	background-color: rgba(0, 0, 0, 0.5) !important;
+}
